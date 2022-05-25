@@ -54,8 +54,8 @@ def init():
 def load():
     with open("fmnist.pkl", 'rb') as f:
         fmnist = pickle.load(f)
-    return fmnist["training_images"], mnist["training_labels"], \
-           fmnist["test_images"], mnist["test_labels"]
+    return fmnist["training_images"], fmnist["training_labels"], \
+           fmnist["test_images"], fmnist["test_labels"]
 
 
 if __name__ == '__main__':
